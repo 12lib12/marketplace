@@ -1,0 +1,66 @@
+.main-content {
+  width: 65%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+.jumbotron {
+  background-image: url("assets/black-friday-elements-assortment.jpg");
+  /* min-height: 45vh; */
+}
+
+.jumbotron-img {
+  /* width: 100%;
+	height: 420px;
+	object-fit: cover;
+	display: block; */
+}
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  text-align: center;
+}
+.page-control {
+  margin-bottom: 1rem;
+  display: flex;
+  /* justify-content: center; */
+  gap: 0.75rem;
+}
+
+.page-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.page-dot:hover,
+.page-dot:focus-visible {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+}
+
+.page-dot.active {
+  background: rgba(255, 255, 255, 1);
+  /* box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08); */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
