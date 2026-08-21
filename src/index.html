@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="flex gap-10 flex-col">
     <header>
       <div
         class="top-bar flex w-full justify-between items-center px-7 border-b py-1 min-h-[30px] border-gray-200 text-gray-600"
@@ -26,7 +26,7 @@
           <i class="fa-solid fa-mobile-screen-button text-md"></i>
           <h5>Install JualJual disini</h5>
         </a>
-        <div class="tb-right flex gap-10 items-center text-sm">
+        <div class="tb-right flex gap-15 items-center text-sm">
           <a href="" class="hover:text-amber-500">Mitra JualJual</a>
           <a href="" class="hover:text-amber-500">About</a>
           <a href="" class="hover:text-amber-500">JualJual Care</a>
@@ -43,7 +43,7 @@
             alt=""
             srcset=""
           />
-          <p class="text-2xl">JualJual.com</p>
+          <p class="text-2xl font-bold">JualJual.com</p>
         </a>
         <div
           class="flex items-center gap-2 border px-3 py-1.5 border-gray-400 rounded-md text-gray-600"
@@ -82,7 +82,7 @@
     </header>
     <main class="main-content">
       <div
-        class="jumbotron my-7 content-end w-full rounded-md min-h-[35vh] bg-cover bg-center repeat-no-repeat"
+        class="jumbotron content-end w-full rounded-md min-h-[35vh] bg-cover bg-center repeat-no-repeat"
       >
         <div class="page-control px-7">
           <button aria-label="Slide 1" class="page-dot active"></button>
@@ -115,9 +115,8 @@
         </div>
         <div
           id="flash-sale-card"
-          class=" flex space-x-2 gap-2 sm:gap-3 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2"
-        >
-        </div>
+          class="flex space-x-2 gap-2 sm:gap-3 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2"
+        ></div>
       </div>
       <div class="kategori flex gap-2 w-full">
         <a
@@ -510,7 +509,7 @@
               </div>
             </div>
           </a>
-                    <a
+          <a
             href="#"
             class="group flex flex-col h-full bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-200"
           >
@@ -559,10 +558,67 @@
           </a>
         </div>
       </div>
-      <footer>
-        
-      </footer>
     </main>
+    <footer class="w-full">
+      <div class="img-quote">
+        <img src="" alt="" />
+      </div>
+      <div class="justify-center grid grid-cols-5 gap-4 px-40 py-16 border border-gray-300">
+        <div class="brand-footer flex flex-col gap-10">
+          <div>
+            <div>
+              <a class="nav-left flex items-center gap-2 hover:cursor-pointer">
+                <img
+                  src="assets/purchase-commerce-and-shopping-svgrepo-com.svg"
+                  class="logo h-9 w-9"
+                  alt=""
+                  srcset=""
+                />
+                <p class="text-2xl font-bold">JualJual.com</p>
+              </a>
+            </div>
+            <p>Let's Shop Beyond Boundaries</p>
+          </div>
+          <div class="flex gap-4">
+            <i class="fa-brands fa-facebook text-2xl"></i>
+            <i class="fa-brands fa-x-twitter text-2xl"></i>
+            <i class="fa-brands fa-youtube text-2xl"></i>
+            <i class="fa-brands fa-instagram text-2xl"></i>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="font-bold text-amber-500">JualJual</p>
+          <a href="">About JualJual</a>
+          <a href="">career</a>
+          <a href="">Mitra Blog</a>
+          <a href="">B2B Digital</a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="font-bold text-amber-500">Beli</p>
+          <a href="">Bill & Top up</a>
+          <a href="">JualJual COD</a>
+          <a href="">Mitra Blog</a>
+          <a href="">Promo</a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="font-bold text-amber-500">Jual</p>
+          <a href="">Pusat Edukasi Penjual</a>
+          <a href="">Indeks Brand</a>
+          <a href="">Daftar Toko Official</a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="font-bold text-amber-500">Bantuan</p>
+          <a href="">JualJual Care</a>
+          <a href="">Syarat & Kondisi</a>
+          <a href="">Privasi</a>
+          <a href="">Mitra</a>
+        </div>
+      </div>
+      <div class="flex items-center justify-center text-sm py-2">
+        <i class="fa-regular fa-copyright"></i>
+        <p>2009 - 2026, PT. JualJual. All Rights Reserved.</p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
