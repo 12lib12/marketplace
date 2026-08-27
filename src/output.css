@@ -292,6 +292,9 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
@@ -310,17 +313,14 @@
   .snap-start {
     scroll-snap-align: start;
   }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
   }
   .content-end {
     align-content: flex-end;
@@ -492,9 +492,6 @@
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
-  }
-  .px-40 {
-    padding-inline: calc(var(--spacing) * 40);
   }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
@@ -691,9 +688,19 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .sm\:grid-cols-\[repeat\(5\,max-content\)\] {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(5,max-content);
+    }
+  }
   .sm\:gap-3 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:gap-10 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 10);
     }
   }
   .sm\:p-2 {
@@ -757,6 +764,11 @@
   .lg\:gap-4 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 4);
+    }
+  }
+  .lg\:gap-20 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 20);
     }
   }
   .xl\:grid-cols-6 {
